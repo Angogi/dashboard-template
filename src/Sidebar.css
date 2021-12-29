@@ -1,0 +1,51 @@
+/* .sidebar{
+    border-right: 1px solid var(--app-background) !important;
+    padding-left: 5px;
+    width: auto;
+    
+}
+
+.header_sidebar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 8px solid var(--app-background);
+ 
+}
+
+.header_sidebar > .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.header_sidebar > .logo > p{
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 7px;
+}
+.header_sidebar > .logo > i{
+    font-size: 40px;
+    font-weight: 800;
+    margin-right: 5px;
+    color: var( --app-color);
+}
+
+.sidebar .sidebar__MenuIcon{
+    color: var(--app-color);
+    font-size: 100px !important;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+
+ .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  } */
+

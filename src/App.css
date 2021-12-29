@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+body{
+  /* --app-color:#50b7f5; */
+  /* --app-color:#0051ff8f;
+  --app-background: #709dff73;*/
+  --app-bodyBackground : #f0f2f5; 
+
+  --app-color: rgb(19 181 181);
+  --app-background: rgb(117 210 211);
+  /* --app-bodyBackground: #383a3a; */
+  color: var(--app-color);
+
+  /* --app-bodyBackground: #e4ecec; //Modo día*/ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-color: var(--app-bodyBackground);
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sideBar__menu{
   display: flex;
   flex-direction: column;
+  transition: ease-in-out 1s;
+}
+
+
+
+.sideBar__menuOption{
+  text-decoration: none;
+  color: black
+}
+
+
+
+.sidebar{
+  /* border-right: 1px solid var(--app-background) !important; */
+  padding-left: 5px;
+  
+  
+}
+
+.header_sidebar{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 8px solid var(--app-background);
+
 }
 
-.App-link {
-  color: #61dafb;
+.header_sidebar > .logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header_sidebar > .logo > p{
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 7px;
+}
+.header_sidebar > .logo > i{
+  font-size: 40px;
+  font-weight: 800;
+  margin-right: 5px;
+  color: var( --app-color);
+}
+
+.sidebar .sidebar__MenuIcon{
+  color: var(--app-color);
+  font-size: 100px !important;
+  /* margin: 20px; */
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.sideBar__rowMenu {
+  position: sticky;
+  right: 20px;
+  margin-top: 45px;
+  color: var(--app-background);
+}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .feed{
+    width: 100%;
+    height: max-content;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .feedHeader__familyMembers {
+    flex: 1;
+}
+
+  .sideBar__menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1000;
+    background: var(--app-bodyBackground);
+    bottom: 0;
+    overflow-x: scroll;
+    width: 100%;
+    border-top: 1px solid var(--app-color);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: -1px 3px 10px #888888;
+  }
+
+  .sideBar__rowMenu{
+    right: 50px;
+  }
+
+  .sidebarOption > h2{
+      display: none;
+  }
+
+  .logo > p{
+    display: none;
+  }
+
+  .widgets{
+    display: none;
   }
 }

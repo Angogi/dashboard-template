@@ -1,0 +1,35 @@
+.individuoSection{
+    display: flex;
+    height: 90vh;
+    flex: 0.7;
+    overflow-y: scroll;
+    flex-direction: column;
+    
+}
+
+
+.individuoSection::-webkit-scrollbar{
+    display: none;
+}
+
+.individuoSection{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
+
+.individuoSection__sectionsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 15px; */
+}
+
+.individuoSection__section{
+    position: relative;
+    width: 330px;
+    height: 220px;
+    background-color: blue;
+    margin: 5px;
+    border: 1px solid darkgrey;
+}

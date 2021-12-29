@@ -1,0 +1,38 @@
+.shareOption{
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    
+
+}
+
+.shareOption:hover{
+    border-top:2px solid var(--app-background);
+    border-left:2px solid var(--app-background);
+    border-radius: 15px ;
+    color: var(--app-color);
+    transition: color 500ms ease-out;
+    padding: 7px;
+    color: var(--app-color);
+
+
+
+
+}
+
+.shareOption > .MuiSvgIcon-root{
+    padding: 5px;
+    font-size: 40px;
+    
+
+}
+
+
+.shareOption > h2{
+    font-weight: 800;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+

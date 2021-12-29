@@ -1,0 +1,17 @@
+.feed{ 
+    flex: 0.7;
+    min-width: fit-content;
+    overflow-y: scroll;
+ }
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
+
+

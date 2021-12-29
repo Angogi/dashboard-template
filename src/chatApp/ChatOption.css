@@ -1,0 +1,10 @@
+.chatOption{
+    display: flex;
+    flex-direction: column;
+    color: var(--app-color);
+
+}
+
+.chatOption > .MuiSvgIcon-root{
+    width: 35px;
+}

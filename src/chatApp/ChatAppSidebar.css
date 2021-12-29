@@ -1,0 +1,63 @@
+.chatAppSidebar{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+   
+}
+
+.chatAppSidebar__header{
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid lightgray;
+    width: 100%;
+}
+
+/* .chatAppSidebar__headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+
+.chatAppSidebar__headerRight > .MuiSvgIcon-root{
+    margin-right: 2vw;
+    font-size: 24px !important;
+} */
+
+.chatAppSidebar__search{
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+.chatAppSidebar__searchContainer > .MuiSvgIcon-root{
+    color: gray ;
+    padding: 10px;
+}
+.chatAppSidebar__searchContainer{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+.chatAppSidebar__searchContainer > input{
+   border: none;
+   margin-left: 10px;
+   width: 100%;
+}
+
+.chatAppSidebar__chats{
+    background-color: white;
+    flex: 1;
+    overflow-y: scroll;
+    border-radius: 35px;
+    
+}
